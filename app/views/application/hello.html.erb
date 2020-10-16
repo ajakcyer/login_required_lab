@@ -1,0 +1,7 @@
+<h1><%= "Hi, #{current_user}" %></h1>
+
+<p><%= link_to 'click for a secret!', '/secret' %></p><br>
+
+<%= form_tag controller: :sessions, method: :post, action: 'destroy' do %>
+    <%= submit_tag "logout" %>
+<% end %>
